@@ -434,7 +434,7 @@ body{
     background-color: #F5F5F5;
 }
 
-@media screen and (max-width:377px) {
+@media screen and (max-width:500px) {
     body{
         background: url("../img/bg_home_sm.svg");
         background-repeat: no-repeat;
