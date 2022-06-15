@@ -74,6 +74,9 @@ body{
     background-repeat: no-repeat;
     background-position:right top;
 }
+.waper{
+    padding: 0 10px;
+}
 .backtop {
     position: fixed;
     width: 70px;
@@ -94,6 +97,7 @@ body{
     display: flex;
     justify-content: space-between;
     margin: 24px auto;
+    padding: 0 8px;
 }
 .navbar h1{
     width: 218.06px;
@@ -202,50 +206,52 @@ body{
     max-width: 1088px;
     margin: 0 auto;
     margin-bottom: 100px;
+    text-align: center;
 }
 .role h2{
     font-size: 32px;
     font-weight: bold;
-    text-align: center;
-    line-height: 1.5;
     color: #221E1F;
-    margin-bottom: 16px;    
+    line-height: 1.5;
+    margin-bottom: 16px;
 }
 .role h3{
     font-size: 20px;
-    text-align: center;
-    line-height: 1.5;
     color: #221E1F;
+    line-height: 1.5;
     margin-bottom: 48px;
 }
 .role ul{
     display: flex;
     justify-content: space-between;
     text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
 }
 .role ul li{
+    width: 100%;
+    max-width: 260px;
+    background: #FFFFFF;
     box-shadow: 0px 2px 10px #00000014;
     border-radius: 12px;
-    width: 260px;
-    background-color: #FFFFFF;
 }
 .role ul li img{
     border-radius: 12px 12px 0px 0px;
     margin-bottom: 16px;
 }
 .role h4{
-    font-size: 16px;
-    line-height: 1.5;
     font-weight: bold;
     color: #56C4C5;
     margin-bottom: 16px;
 }
 .role p{
-    font-size: 16px;
-    line-height: 1.5;
     color: #221E1F;
     margin-bottom: 24px;
 }
+.role .oneline{
+    margin-bottom: 48px;
+}
+
 
 .feature{
     max-width: 1039px;
@@ -261,7 +267,8 @@ body{
     justify-content: space-between;
 }
 .feature li{
-    width: 230px;
+    width: 100%;
+    max-width: 230px;
     margin: 0 47px 28px 0;
     padding: 32px 32px 48px 32px;
     box-shadow: 0px 2px 10px #00000014;
@@ -269,7 +276,7 @@ body{
     background-color: #FFFFFF;
 }
 .feature .rad_img{
-    width: 86px;
+    max-width: 86px;
     border: none;
     border-radius: 50%;
     box-shadow: 0px 2px 10px #00000014;
@@ -296,7 +303,7 @@ body{
     margin: 165px 0;
 }
 .feature .right h2{
-    width: 256px;
+    /* width: 256px; */
     font-size: 32px;
     line-height: 1.5;
     font-weight: bolder;
@@ -304,7 +311,7 @@ body{
     margin-bottom: 16px;
 }
 .feature .right h3{
-    width: 400px;
+    /* width: 400px; */
     font-size: 18px;
     line-height: 1.5;
     color: #221E1F;
@@ -333,7 +340,7 @@ body{
     text-align: center;
     line-height: 1.5;
     color: #221E1F;
-    margin-bottom: 104px;     
+    margin-bottom: 48px;     
 }
 .good ul{
     display: flex;
@@ -359,12 +366,13 @@ body{
     margin-bottom: 24px;
 }
 .good p{
-    padding-top: 48px;
     padding-bottom: 24px;
     border-bottom: 1px solid #DDDDDD;
     font-size: 16px;
     line-height: 1.5;
+    margin-top: 48px;
     margin-bottom: 24px;
+    min-height: 97px;
 }
 .good h3{
     font-weight: bolder;
@@ -434,7 +442,170 @@ body{
     background-color: #F5F5F5;
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:768px) {
+    body{
+        background-size: 420px;
+    }
+    .backtop{
+        width: 50px;
+        height: 50px;
+        bottom: 16px;
+        right: 16px;
+        font-size: 14px;
+        padding: 18px 0;
+    }
+    .navbar{
+        max-width: 750px;
+        padding: 16px 20px;
+        margin: 0 auto;
+
+    }
+
+    .ad{
+        max-width: 750px;
+        margin-top: 30px;
+        margin-bottom: 80px;
+    }
+    .ad .left{
+        width: 100%;
+        margin: 32px auto;  
+    }
+    .ad .left h3{
+        font-size: 16px;
+    } 
+    .ad .left h2{
+        font-size: 32px;
+    } 
+    .ad .left p{
+        font-size: 16px;
+    }
+    .ad .right img{
+        height: 305px;
+        margin-bottom: 38.5px;
+    }
+    
+    .media{
+        max-width: 750px;
+        margin-bottom: 80px;
+    }
+    .media h2{
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+    .media ul{
+        width: 100%;
+    }
+    .media ul li img{
+        width: 60px;
+        margin-bottom: 16px;
+    }
+    .media h3{
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
+    .media p{
+        font-size: 16px;
+        margin-bottom: 24px;
+        padding: 0 3px;
+
+    }
+    
+    .role{
+        max-width: 750px;
+        margin-bottom: 80px;
+    }
+    .role h2{
+        font-size: 30px;
+        margin-bottom: 16px;
+    }
+    .role h3{
+        font-size: 19px;
+        margin-bottom: 32px;
+    }
+    .role ul{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .role ul li{
+        margin-bottom: 24px;
+        max-width: 260px;
+    }
+
+    .feature{
+        max-width: 750px;
+        margin-bottom: 80px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .feature .right{
+        max-width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 32px;
+    }
+    .feature ul{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .feature .right h2{
+        width: 100%;
+        font-size: 28px;
+        text-align: center;
+    }
+    .feature .right h3{
+        width: 100%;
+        font-size: 16px;   
+        margin-bottom: 16px;     
+        text-align: center;             
+    }
+    .feature li{
+        margin: 0 0 24px 0;
+    }
+
+    .good{
+        max-width: 750px;
+        margin-bottom: 80px;
+    }
+    .good h2{
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+    .good .slide_card{
+        display: none;
+    }
+    .good li{
+        max-width: 335px;
+        padding: 0 16px;
+        box-shadow: 0px 2px 10px #00000014;
+        border-radius: 12px;
+        font-size: 16px;
+    }
+    .good p{
+        margin-bottom: 16px;
+    }
+    .good h3{
+        font-weight: bolder;
+        margin-bottom: 8px;
+    }
+    .good .slide{
+        margin-bottom: 80px;
+    }
+
+    .footer{
+        padding-top: 220px;
+    }
+    .footer h2{
+        font-size: 28px;
+        margin-bottom: 36px;
+    }
+    .footer .plan_l{
+        margin-bottom: 80px;
+    }    
+}
+
+@media screen and (max-width:400px) {
     body{
         background: url("../img/bg_home_sm.svg");
         background-repeat: no-repeat;
@@ -572,7 +743,7 @@ body{
     }
     .good h2{
         font-size: 28px;
-        margin-bottom: 88px;
+        margin-bottom: 32px;
     }
     .good .slide_card{
         display: none;
@@ -608,3 +779,53 @@ body{
         margin-bottom: 60px;
     }    
 }
+
+
+
+/* swiper套件設定 */
+
+:root {
+    --swiper-theme-color: #ffd153;
+  }
+  
+  p {
+    line-height: 1.5;
+  }
+  
+  .container {
+    max-width: 1120px;
+    padding-right: 16px;
+    padding-left: 16px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  /* 依照設計稿客製化的卡片陰影 */
+  .card-shadow {
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.14);
+  }
+  
+  /* 調整 swiper 容器 */
+  .swiper {
+    padding: 60px 16px 0 0;
+  }
+  
+  .swiper-wrapper {
+    padding: 0 0 0 8px;
+  }
+  
+  .swiper-slide {
+    height: initial;
+  }
+  
+  /* 將底部 pagination 分頁的 active 狀態改為想要的樣式 */
+  .swiper-pagination-bullet-active {
+    width: 20px;
+    border-radius: 8px;
+  }
+  
+  /* 讓分頁圓點移至下方 */
+  .swiper-pagination {
+    position: static;
+    margin-top: 24px;
+  }
