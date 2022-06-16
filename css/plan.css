@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Wendy+One&display=swap");
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+body {
+  font-family: Noto Sans TC, PingFangTC-Semibold, 'Wendy One', 'Comfortaa', cursive, sans-serif;
+}
+
+.waper {
+  max-width: 909px;
+  margin: 0 auto;
+  padding: 0 5px;
+  margin-top: 570px;
+  color: #221E1F;
+}
+
+h2 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 48px;
+  font-weight: bolder;
+}
+
+.box_info {
+  margin-bottom: 100px;
+}
+
+.box_info ul {
+  margin: 0 auto;
+  margin-bottom: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.box_info ul a {
+  display: block;
+  text-decoration: none;
+  font-family: Comfortaa;
+  color: #56C4C5;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 12px 32px;
+  margin: 0 12px;
+  background: #FFFFFF;
+  border: 1px solid #56C4C5;
+  border-radius: 27px;
+}
+
+.box_info ul a:hover {
+  background: #56C4C5;
+  color: #FFFFFF;
+}
+
+.box_info .box_cost {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.box_info .card {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+  border-radius: 12px;
+  width: 50%;
+  max-width: 444px;
+  min-height: 570px;
+}
+
+.box_info .card h2 {
+  font-size: 24px;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: bolder;
+  padding: 10px 0 16px 0;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+.box_info .card p {
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.5;
+  margin: 32px auto;
+}
+
+.box_info .card .box_fee {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 32px;
+}
+
+.box_info .card .box_fee .box_fee_small {
+  width: 169px;
+  padding: 17px 24px;
+  text-align: center;
+  background: #F5F5F5;
+  border-radius: 12px;
+}
+
+.box_info .card .box_fee .box_fee_small p {
+  font-size: 12px;
+  line-height: 1.5em;
+  margin: 0 0 8px 0;
+}
+
+.box_info .card .box_fee .box_fee_small .number {
+  color: #56C4C5;
+  font-size: 32px;
+  font-family: Comfortaa;
+  margin: 0;
+  display: inline-block;
+}
+
+.box_info .card .box_fee .box_fee_small sub {
+  color: #56C4C5;
+  font-size: 12px;
+  font-weight: bolder;
+  margin-left: 8px;
+}
+
+.box_info .card .box_fee .box_fee_small .money {
+  color: #221E1F;
+}
+
+.box_info .card .box_fee .equal {
+  font-size: 29px;
+  line-height: 1.5;
+  text-align: center;
+  margin: 0 21px;
+}
+
+.box_info .card ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 29px;
+  margin-bottom: 0;
+}
+
+.box_info .card ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.box_info .card ul img {
+  width: 19.56px;
+}
+
+.box_info .card ul p {
+  font-size: 16px;
+  text-align: left;
+  line-height: 1.5;
+  margin: 0 0 0 12.94px;
+}
+
+.box_info .card a {
+  width: 138px;
+  display: block;
+  text-decoration: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 12px 32px;
+  margin: 32px auto;
+  margin-top: 16 px;
+  background: #56C4C5;
+  border: 1px solid #56C4C5;
+  border-radius: 27px;
+}
+
+.box_info .card a:hover {
+  color: #56C4C5;
+  background: #FFFFFF;
+}
+
+.box_QA {
+  max-width: 904px;
+  margin-bottom: 100px;
+}
+
+.box_QA ul {
+  width: 100%;
+}
+
+.box_QA li {
+  margin-bottom: 16px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+  border-radius: 12px;
+}
+
+.box_QA li:hover {
+  background: #F5F5F5;
+}
+
+.box_QA .btn_QA {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-decoration: none;
+  font-size: 18px;
+  color: #221E1F;
+  padding: 16px 32px;
+}
+
+.box_QA .btn_QA img {
+  width: 20px;
+}
+
+.box_QA .btn_QA .less {
+  display: none;
+}
+
+.box_QA p {
+  padding: 0 32px 16px 32px;
+  font-size: 16px;
+  line-height: 2;
+  color: #747474;
+  margin: 6px 0 16px 0;
+  display: none;
+}
+
+.box_QA .active {
+  color: #56C4C5;
+  background: #F5F5F5;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 18px;
+  padding: 20px;
+  color: #221E1F;
+  background-color: #F5F5F5;
+}
+/*# sourceMappingURL=plan.css.map */
