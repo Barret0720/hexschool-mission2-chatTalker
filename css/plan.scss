@@ -376,12 +376,14 @@ h2 {
     .bg{
         top: 74px;
         height: 495px;
+        border-radius: 0px 0px 0px 150px;
     }
     .bg_img{
         background: url("../img/banner_sm.svg");
         background-repeat: no-repeat;
         padding-top: 495px;
         top: 74px;
+        background-size: contain;
     }
     .bg_Ball{
         height: 204px;
