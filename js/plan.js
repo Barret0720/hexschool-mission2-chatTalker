@@ -1,3 +1,48 @@
+
+ // 方案選擇
+ // 抄錄https://asz8621.github.io/chatTalker/program.html
+ $('.planSelect').click(function() {
+    const basic = 600
+    const standard = basic + 1000
+	var string = ($(this).text()).slice(0, -1);
+	console.log (string);
+    $(this).addClass('active')
+    $(this).parent().siblings().find('.planSelect').removeClass('active')
+    switch(string) {
+    case '10000':
+      $('.basicuser').text(string)
+      $('.basicmoney').text(basic)
+      $('.standaruser').text(string)
+      $('.standarmoney').text(standard)
+      break
+    case '15000':
+		$('.basicuser').text(string)
+		$('.basicmoney').text(basic * 1.8)
+		$('.standaruser').text(string)
+		$('.standarmoney').text(standard * 1.8)
+      break
+    case '20000':
+		$('.basicuser').text(string)
+		$('.basicmoney').text(basic * 2.6)
+		$('.standaruser').text(string)
+		$('.standarmoney').text(standard * 2.6)
+      break
+    case '25000':
+		$('.basicuser').text(string)
+		$('.basicmoney').text(basic  * 3.5)
+		$('.standaruser').text(string)
+		$('.standarmoney').text(standard * 3.5)
+      break
+    default:
+		$('.basicuser').text(string)
+		$('.basicmoney').text(basic * 4)
+		$('.standaruser').text(string)
+		$('.standarmoney').text(standard * 4)
+      break
+    }
+  })
+
+
 // codepen https://codepen.io/hnzxewqw/pen/bGEKLdo
 // QA選單收合
 
@@ -18,4 +63,4 @@ $(function () {
 	});
 });
 
-    
+

@@ -100,7 +100,8 @@ body {
 
 .ad {
   max-width: 1088px;
-  margin: 92px auto auto 5px;
+  margin: 92px auto auto auto;
+  padding-left: 5px;
 }
 
 .ad h2 {
