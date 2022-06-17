@@ -100,7 +100,7 @@ body {
 
 .ad {
   max-width: 1088px;
-  margin: 92px auto auto auto;
+  margin: 92px auto auto 5px;
 }
 
 .ad h2 {
@@ -374,7 +374,7 @@ h2 {
   background-color: #F5F5F5;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 768px) {
   .backtop {
     width: 50px;
     height: 50px;
@@ -383,6 +383,36 @@ h2 {
     font-size: 14px;
     padding: 18px 0;
   }
+  .navbar {
+    max-width: 750px;
+    padding: 16px 20px;
+    margin: 0 auto;
+  }
+  .bg {
+    border-radius: 0px 0px 0px 150px;
+  }
+  .bg_img {
+    background-size: cover;
+  }
+  .box_info .box_cost {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 0px;
+  }
+  .box_info .card {
+    width: 100%;
+    max-width: 750px;
+    min-height: 515px;
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (max-width: 450px) {
   .navbar {
     max-width: 450px;
     border-bottom: 2px solid #FFD153;
@@ -440,18 +470,7 @@ h2 {
     margin: 3px;
     padding: 7px 14.7px;
   }
-  .box_info .box_cost {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-bottom: 0px;
-  }
   .box_info .card {
-    width: 100%;
     max-width: 335px;
     min-height: 515px;
     margin-bottom: 24px;

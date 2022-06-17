@@ -106,7 +106,7 @@ body {
 
 .ad{
     max-width: 1088px;
-    margin: 92px auto auto auto;
+    margin: 92px auto auto 5px;
     h2{
         font-size: $fz_xl;
         color: $c_word;
@@ -347,10 +347,6 @@ h2 {
 
 
 @media screen and (max-width:768px) {
-    
-}
-
-@media screen and (max-width:450px) {
     .backtop{
         width: 50px;
         height: 50px;
@@ -359,6 +355,36 @@ h2 {
         font-size: 14px;
         padding: 18px 0;
     }
+
+    .navbar{
+        max-width: 750px;
+        padding: 16px 20px;
+        margin: 0 auto;
+    }
+    .bg{
+        border-radius: 0px 0px 0px 150px;
+    }
+    .bg_img{
+        background-size: cover;
+    }
+    .box_info{
+        .box_cost{
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 0px;
+        }
+        .card{
+            width: 100%;
+            max-width: 750px;
+            min-height: 515px;
+            margin-bottom: 24px;
+        }
+    }
+
+}
+
+@media screen and (max-width:450px) {
+
     .navbar{
         max-width: 450px;
         border-bottom: 2px solid #FFD153;
@@ -416,13 +442,7 @@ h2 {
                 padding: 7px 14.7px;
             }
         }
-        .box_cost{
-            flex-direction: column;
-            align-items: center;
-            margin-bottom: 0px;
-        }
         .card{
-            width: 100%;
             max-width: 335px;
             min-height: 515px;
             margin-bottom: 24px;
