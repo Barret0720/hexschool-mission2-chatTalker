@@ -11,6 +11,39 @@ body{
     background-repeat: no-repeat;
     background-position:right top;
 }
+.bg_Ball1{
+    background: url("../img/ball01.svg");
+    background-repeat: no-repeat;
+    width: 360px;
+    height: 100%;
+    background-size: contain;
+    position: absolute;
+    z-index: -99;
+    top: 589px;
+    left: -222px;
+}
+.bg_Ball2{
+    background: url("../img/ball02.svg");
+    background-repeat: no-repeat;
+    width: 310px;
+    height: 100%;
+    background-size: contain;
+    position: absolute;
+    z-index: -99;
+    top: 1764px;
+    right: -100px;
+}
+.bg_Ball3{
+    background: url("../img/ball03.svg");
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 100%;
+    background-size: contain;
+    position: absolute;
+    z-index: -99;
+    top: 2740px;
+    left: 50px;
+}
 .waper{
     padding: 0 10px;
 }
