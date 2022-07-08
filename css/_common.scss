@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Wendy+One&display=swap');
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+$c_main: #56C4C5;
+$c_word: #221E1F;
+$c_word_gray: #747474;
+$c_bg_gray: #F5F5F5;
+$c_gary: #DDDDDD;
+$c_shadow: #00000014;
+
+$fz_xl: 48px;
+$fz_l: 32px;
+$fz_m: 18px;
+$fz_s: 16px;
+$fz_xs: 12px;
+
+
+body {
+    font-family: 'Noto Sans TC', PingFangTC-Semibold, 'Wendy One', 'Comfortaa', cursive, sans-serif;
+    line-height: 1.5;
+}
+
+.bg{
+    width: 100%;
+    height: 470px;
+    background: #F7F9FD;
+    border-radius: 0px 0px 0px 300px;
+    position:absolute;
+    right: 0;
+    top: 0;
+    z-index: -99;
+}
+.bg_img{
+    width: 100%;
+    background: url("../img/banner.svg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    padding-top: 559px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -99;
+}
+
+.bg_Ball{
+    height: 361px;
+    width: 100%;
+    background: url("../img/ball03.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: -266px;
+    top: 876px;
+    z-index: -99;
+}
+
+.backtop {  
+    position: fixed;
+    width: 70px;
+    background-color: $c_main;
+    border-radius: 50%;
+    font-weight: bolder;
+    text-align: center;
+    color: #fff;
+    padding: 23px 0;
+    z-index: 299;
+    right: 48px;
+    bottom: 24px;
+    border: 0;
+    /* 改變游標的 hover 樣式來增加使用者體驗 */
+    cursor: pointer;
+    &:hover{
+        background: #fff;
+        color: $c_main;
+        border: 2px solid $c_main;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .backtop{
+        width: 50px;
+        bottom: 16px;
+        right: 16px;
+        font-size: 14px;
+        padding: 15px 0;
+    }
+
+    .bg{
+        border-radius: 0px 0px 0px 150px;
+    }
+    .bg_img{
+        background-size: cover;
+    } 
+}
+
+@media screen and (max-width:450px) {
+    .bg{
+        top: 74px;
+        height: 495px;
+        border-radius: 0px 0px 0px 150px;
+    }
+    .bg_img{
+        background: url("../img/banner_sm.svg");
+        background-repeat: no-repeat;
+        padding-top: 495px;
+        top: 74px;
+        background-size: contain;
+    }
+    .bg_Ball{
+        height: 204px;
+        left: -108px;
+        top: 1263px;
+    } 
+}

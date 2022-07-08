@@ -1,7 +1,8 @@
 @import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Wendy+One&display=swap');
 body{
-    font-family: Noto Sans TC, 'Wendy One', PingFangTC-Semibold, sans-serif;
+    font-family: 'Noto Sans TC', 'Wendy One', PingFangTC-Semibold, sans-serif;
+    line-height: 1.5;
 }
 
 /* 以下開始正文設計 */
@@ -49,9 +50,6 @@ body{
     top: 2740px;
     left: 50px;
 }
-.waper{
-    padding: 0 10px;
-}
 .backtop {  
     position: fixed;
     width: 70px;
@@ -60,10 +58,12 @@ body{
     font-weight: bolder;
     text-align: center;
     color: #fff;
-    padding: 27px 0;
+    padding: 23px 0;
     z-index: 299;
     right: 48px;
     bottom: 24px;
+    /* 改變游標的 hover 樣式來增加使用者體驗 */
+    cursor: pointer;
 }
 .backtop:hover{
         background: #fff;
@@ -72,11 +72,10 @@ body{
 }
 
 .navbar{
-    max-width: 1088px;
+    max-width: 1120px;
     display: flex;
     justify-content: space-between;
     margin: 24px auto;
-    padding: 0 8px;
 }
 .navbar h1{
     width: 218.06px;
@@ -93,7 +92,6 @@ body{
     color: #FFFFFF;
     font-size: 16px;
     text-decoration: none;
-    line-height: 1.5rem;
     border-radius: 22px;
     text-align: center;
     padding: 8px 0px;
@@ -104,40 +102,44 @@ body{
     color: #FF5D50;
 }
 
-.ad{
+.container{
+    max-width: 1120px;
     margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.ad{
     margin-bottom: 217px;
     display: flex;
     justify-content: space-between;
-    max-width: 1085PX;
 }
-.ad .left{
+.ad .word{
     margin: 158px 0 157px 0;
-    max-width: 553px;
+    width: 50.8272%;
 }
-.ad .left h3{
+.ad .word h2{
     font-size: 18px;
     color: #56C4C5;
     font-weight: bold;
-    line-height: 1.5;
     margin-bottom: 8px;
 }
-.ad .left h2{
+.ad .word h3{
     font-size: 48px;
     color: #221E1F;
     font-weight: bolder;
     line-height: 1.458;
     margin-bottom: 16px;
 }
-.ad .left p{
+.ad .word p{
     font-size: 20px;
     color: #221E1F;
     line-height: 1.4;    
 }
-.ad .right{
+.ad .img{
     width: 100%;
 }
-.ad .right img{
+.ad .img img{
     height: 534px;
 }
 
@@ -171,19 +173,15 @@ body{
 .media h3{
     font-size: 24px;
     color: #221E1F;
-    line-height: 1.5;
     font-weight: bolder;
     margin-bottom: 24px;
 }
 .media p{  
     font-size: 16px;
     color: #747474;
-    line-height: 1.5;
 }
 
 .role{
-    max-width: 1088px;
-    margin: 0 auto;
     margin-bottom: 100px;
     text-align: center;
 }
@@ -191,13 +189,11 @@ body{
     font-size: 32px;
     font-weight: bold;
     color: #221E1F;
-    line-height: 1.5;
     margin-bottom: 16px;
 }
 .role h3{
     font-size: 20px;
     color: #221E1F;
-    line-height: 1.5;
     margin-bottom: 48px;
 }
 .role ul{
@@ -205,11 +201,9 @@ body{
     justify-content: space-between;
     text-align: center;
     font-size: 16px;
-    line-height: 1.5;
 }
 .role ul li{
-    width: 100%;
-    max-width: 260px;
+    width: 23.8971%;
     background: #FFFFFF;
     box-shadow: 0px 2px 10px #00000014;
     border-radius: 12px;
@@ -233,14 +227,13 @@ body{
 
 
 .feature{
-    max-width: 1039px;
-    margin: 0 auto;
+    margin-right: 49px;
     margin-bottom: 100px;
     display: flex;
     justify-content: space-between;
 }
 .feature ul{
-    max-width: 554px;
+    width: 53.3205%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -267,36 +260,31 @@ body{
 }
 .feature h3{
     font-size: 18px;
-    line-height: 1.5;
     font-weight: bolder;
     color: #221E1F;
     margin-bottom: 16px;
 }
 .feature p{
     font-size: 16px;
-    line-height: 1.5;
     color: #221E1F;
 }
-.feature .right{
-    max-width: 395px;
+.feature .box2{
+    width: 38.018%;
     margin: 165px 0;
 }
-.feature .right h2{
-    /* width: 256px; */
+.feature .box2 h2{
     font-size: 32px;
-    line-height: 1.5;
     font-weight: bolder;
     color: #221E1F;
     margin-bottom: 16px;
 }
-.feature .right h3{
+.feature .box2 p{
     /* width: 400px; */
     font-size: 18px;
-    line-height: 1.5;
     color: #221E1F;
     margin-bottom: 24px;
 }
-.plan_l{
+.plan_green{
     font-size: 18px;
     width: 136px;
     background-color: #56C4C5;
@@ -304,20 +292,17 @@ body{
     border-radius: 27px;
     padding: 11.5px 0px
 }
-.plan_l:hover{
+.plan_green:hover{
     color: #56C4C5;
 }
 
 .good{
-    max-width: 1088px;
-    margin: 0 auto;
     margin-bottom: 100px;
 }
 .good h2{
     font-size: 32px;
     font-weight: bold;
     text-align: center;
-    line-height: 1.5;
     color: #221E1F;
     margin-bottom: 48px;     
 }
@@ -348,7 +333,6 @@ body{
     padding-bottom: 24px;
     border-bottom: 1px solid #DDDDDD;
     font-size: 16px;
-    line-height: 1.5;
     margin-top: 48px;
     margin-bottom: 24px;
     min-height: 97px;
@@ -387,18 +371,16 @@ body{
 }
 .footer h2{
     font-size: 32px;
-    line-height: 1.5;
     color: #221E1F;
     font-weight: bolder;
     margin-bottom: 48px;
 }
-.footer .plan_l{
+.footer .plan_green{
     margin-bottom: 100px;
 }
 .copyright{
     text-align: center;
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 16px; 
     padding: 20px;
     color: #221E1F;
     background-color: #F5F5F5;
@@ -429,39 +411,41 @@ body{
         bottom: 16px;
         right: 16px;
         font-size: 14px;
-        padding: 18px 0;
+        padding: 15px 0;
+    }
+    .container{
+        max-width: 782px;
+        margin: 0 auto;
     }
     .navbar{
-        max-width: 750px;
-        padding: 16px 20px;
+        max-width: 782px;
         margin: 0 auto;
+        padding: 16px 20px;
     }
 
     .ad{
-        max-width: 750px;
         margin-top: 30px;
         margin-bottom: 80px;
     }
-    .ad .left{
+    .ad .word{
         width: 100%;
         margin: 32px auto;  
     }
-    .ad .left h3{
+    .ad .word h3{
         font-size: 16px;
     } 
-    .ad .left h2{
-        font-size: 32px;
+    .ad .word h2{
+        font-size: 20px;
     } 
-    .ad .left p{
-        font-size: 16px;
+    .ad .word p{
+        font-size: 18px;
     }
-    .ad .right img{
+    .ad .img img{
         height: 305px;
         margin-bottom: 38.5px;
     }
     
     .media{
-        max-width: 750px;
         margin-bottom: 80px;
     }
     .media h2{
@@ -487,7 +471,6 @@ body{
     }
     
     .role{
-        max-width: 750px;
         margin-bottom: 80px;
     }
     .role h2{
@@ -504,17 +487,17 @@ body{
     }
     .role ul li{
         margin-bottom: 24px;
-        max-width: 260px;
+        width: 100%;
     }
 
     .feature{
-        max-width: 750px;
+        margin: 0 auto;
         margin-bottom: 80px;
         flex-direction: column-reverse;
         align-items: center;
     }
-    .feature .right{
-        max-width: 100%;
+    .feature .box2{
+        width: 100%;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
@@ -522,15 +505,17 @@ body{
         margin-bottom: 32px;
     }
     .feature ul{
+        width: 100%;
+        margin: 0 auto;
         flex-wrap: wrap;
         justify-content: space-around;
     }
-    .feature .right h2{
+    .feature .box2 h2{
         width: 100%;
         font-size: 28px;
         text-align: center;
     }
-    .feature .right h3{
+    .feature .box2 h3{
         width: 100%;
         font-size: 16px;   
         margin-bottom: 16px;     
@@ -541,7 +526,6 @@ body{
     }
 
     .good{
-        max-width: 750px;
         margin-bottom: 80px;
     }
     .good h2{
@@ -552,7 +536,7 @@ body{
         display: none;
     }
     .good li{
-        max-width: 335px;
+        width: 50%;
         padding: 0 16px;
         box-shadow: 0px 2px 10px #00000014;
         border-radius: 12px;
@@ -603,20 +587,9 @@ body{
         top: 4827px;
         left: -76px;
     }
-    .backtop{
-        width: 50px;
-        height: 50px;
-        bottom: 16px;
-        right: 16px;
-        font-size: 14px;
-        padding: 18px 0;
-    }
     .navbar{
         max-width: 450px;
         border-bottom: 2px solid #FFD153;
-        padding: 16px 20px;
-        margin: 0 auto;
-
     }
     .navbar h1{
         width: 130.84px;
@@ -626,31 +599,33 @@ body{
         width: 130.84px;
         margin: 8px 0;
     }
+    .container{
+        max-width: 367px;
+        margin: 0 auto;
+    }
     .ad{
-        max-width: 335px;
         flex-direction: column;
         align-items: center;
         margin-bottom: 60px;
     }
-    .ad .left{
+    .ad .word{
         margin: 32px auto;
     }
-    .ad .left h3{
+    .ad .word h3{
         font-size: 16px;
     } 
-    .ad .left h2{
+    .ad .word h2{
         font-size: 32px;
     } 
-    .ad .left p{
+    .ad .word p{
         font-size: 16px;
     }
-    .ad .right img{
+    .ad .img img{
         height: 305px;
         margin-bottom: 38.5px;
     }
     
     .media{
-        max-width: 335px;
         margin-bottom: 60px;
     }
     .media h2{
@@ -675,7 +650,6 @@ body{
     }
     
     .role{
-        max-width: 335px;
         margin-bottom: 60px;
     }
     .role h2{
@@ -692,19 +666,18 @@ body{
     }
     .role ul li{
         margin-bottom: 24px;
-        max-width: 260px;
+        width: 77.612%;
     }
 
     .feature{
-        max-width: 335px;
         margin-bottom: 36px;
         flex-direction: column-reverse;
         align-items: center;
 
 
     }
-    .feature .right{
-        max-width: 100%;
+    .feature .box2{
+        width: 100%;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
@@ -716,11 +689,11 @@ body{
         flex-direction: column;
         align-items: center;
     }
-    .feature .right h2{
+    .feature .box2 h2{
         width: 100%;
         font-size: 28px;
     }
-    .feature .right h3{
+    .feature .box2 h3{
         width: 100%;
         font-size: 16px;   
         margin-bottom: 16px;                  
@@ -728,9 +701,20 @@ body{
     .feature li{
         margin: 0 0 24px 0;
     }
+    .order-1{
+        order: 1;
+    }
+    .order-2{
+        order: 3;
+    }
+    .order-3{
+        order: 2;
+    }
+    .order-4{
+        order: 4;
+    }
 
     .good{
-        max-width: 335px;
         margin-bottom: 60px;
     }
     .good h2{
@@ -741,7 +725,6 @@ body{
         display: none;
     }
     .good li{
-        max-width: 335px;
         padding: 0 16px;
         box-shadow: 0px 2px 10px #00000014;
         border-radius: 12px;
@@ -777,19 +760,7 @@ body{
 :root {
     --swiper-theme-color: #ffd153;
   }
-  
-  p {
-    line-height: 1.5;
-  }
-  
-  .container {
-    max-width: 1120px;
-    padding-right: 16px;
-    padding-left: 16px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  
+
   /* 依照設計稿客製化的卡片陰影 */
   .card-shadow {
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.14);
